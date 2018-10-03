@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :actors
   resources :reviews
-  get 'movies/index'
+  # get 'movies/index'
   # get 'movies/show/:id'
   # post 'movies/create'
   # get 'movies/new'
@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # put 'movies/update'
   # patch 'movies/update'
   # delete 'movies/destroy'
+  # get 'movies', to: 'movies#index'
   get 'movies', to: 'movies#index'
   post 'movies', to: 'movies#create'
   get 'movies/new', to: 'movies#new', as: 'new_movie'
