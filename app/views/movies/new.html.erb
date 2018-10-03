@@ -1,5 +1,8 @@
+<div class="container text-center">
+<div class="row">
 <h1>New Movie</h1>
-
+</div>
+<div class="row">
 <%= form_with model: @movie, local: true  do |form|%>
  <p> 
     <%= form.label :title %>
@@ -20,4 +23,5 @@
  <%= form.submit %>
 
 <% end %>
-
+</div>
+</div>

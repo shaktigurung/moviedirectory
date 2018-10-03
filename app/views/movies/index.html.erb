@@ -1,4 +1,8 @@
+<div class="container text-center">
+<div class="rows">
 <h1>Movies</h1>
+</div>
+<div class="rows">
 <%= link_to "New Movie", new_movie_path %>
 <% @movies.each do |movie| %>
     <div>
@@ -9,3 +13,5 @@
                                 data: {confirm: 'Are you sure?'} %>
     </div>
 <% end %>
+</div>
+</div>
