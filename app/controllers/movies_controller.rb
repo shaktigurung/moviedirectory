@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
   def create
      @movie = Movie.new(movie_params)
      @movie.save
-
+  
      redirect_to @movie
     # render json: @movie
   end
