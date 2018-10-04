@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   put 'movies/:id', to: 'movies#update'
   patch 'movies/:id', to: 'movies#update'
   delete 'movies/:id', to: 'movies#destroy'
-  root 'movies#index'
+  # root 'movies#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
